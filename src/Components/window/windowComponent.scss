@@ -1,0 +1,102 @@
+.frame {
+  background-color: white;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+}
+
+.maximized {
+  width: 800px;
+  height: 600px;
+  animation: maximize 0.3s cubic-bezier(0.45, 0.16, 0.29, 0.03);
+  animation-iteration-count: 1;
+}
+
+.minimized {
+  width: 0px;
+  height: 0px;
+  animation: minimize 0.3s cubic-bezier(0.45, 0.16, 0.29, 0.03);
+  animation-iteration-count: 1;
+}
+.invisible {
+  display: none;
+}
+.frame-content_minimized {
+  display: none;
+}
+
+@keyframes minimize {
+  0% {
+    top: 10%;
+    left: 25%;
+    height: 600px;
+    width: 800px;
+    opacity: 1;
+  }
+  25% {
+    top: 20%;
+    left: 30%;
+    height: 400px;
+    width: 600px;
+    opacity: 0.8;
+  }
+  50% {
+    top: 30%;
+    left: 35%;
+    height: 200px;
+    width: 400px;
+    opacity: 0.6;
+  }
+  75% {
+    top: 40%;
+    left: 40%;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes maximize {
+  0% {
+    top: 50%;
+    left: 50%;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+  }
+  25% {
+    top: 40%;
+    left: 40%;
+    height: 100px;
+    width: 200px;
+    opacity: 0;
+  }
+  50% {
+    top: 30%;
+    left: 35%;
+    height: 200px;
+    width: 400px;
+    opacity: 0.6;
+  }
+  75% {
+    top: 20%;
+    left: 30%;
+    height: 400px;
+    width: 600px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 10%;
+    left: 25%;
+    height: 600px;
+    width: 800px;
+    opacity: 1;
+  }
+}
