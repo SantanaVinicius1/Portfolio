@@ -10,10 +10,11 @@ import { useNavigate } from "react-router-dom";
 
 import "./Terminal.scss";
 
-const Terminal = () => {
+const Terminal = (props) => {
   const [text, setText] = useState("");
   const [pass, setPass] = useState(false);
   const [init, setInit] = useState(true);
+
   const navigate = useNavigate();
 
   const ref = useRef(null);
@@ -60,7 +61,8 @@ const Terminal = () => {
 
   const verifyPassword = (e) => {
     if (text.trim() === "aurora") {
-      addLine("Youre good " + text, "typer-10", 0);
+      loopLines(Commands.discovered, "typer-10", 100);
+      props.setDiscovered(true);
     } else {
       addLine("<br /> wrong password!", "error", 10);
     }
@@ -100,7 +102,11 @@ const Terminal = () => {
         clearText();
         break;
       case "puzzle":
-        setPasswordMode(true);
+        if (!props.discovered) setPasswordMode(true);
+        else {
+          loopLines(Commands.advice, "typer-10", 10);
+          clearText();
+        }
         break;
       case "banner":
         loopLines(Commands.banner, "typer-10", 10);

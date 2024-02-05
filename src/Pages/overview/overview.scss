@@ -184,3 +184,113 @@
   display: none;
   transition: all 0.2s ease-in-out;
 }
+
+.card {
+  width: 972px;
+  height: 476px;
+  margin: auto;
+  padding-top: 55px;
+  background-color: #282e37;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 2px 10px -7px rgba(209, 209, 209, 1);
+  -moz-box-shadow: 3px 2px 10px -7px rgba(209, 209, 209, 1);
+  box-shadow: 3px 2px 10px -7px rgba(209, 209, 209, 1);
+}
+
+.card-white-heading {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.card-purple-heading {
+  color: #a139f4;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 84px;
+  margin-left: 40px;
+}
+
+.card-name-heading {
+  width: 222px;
+  height: 81px;
+  margin-left: 40px;
+  margin-top: 40px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 35px;
+  /* or 78% */
+  display: flex;
+  align-items: center;
+
+  color: #4b4a4c;
+}
+
+.card-name-subheading {
+  width: 213px;
+  height: 81px;
+  left: 854px;
+  top: 364px;
+
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 35px;
+  /* or 146% */
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: -30px;
+  color: #4b4a4c;
+}
+
+.card-line {
+  /* Line 1 */
+
+  width: 308px;
+  height: 0px;
+  margin-top: -20px;
+  border: 2px solid #a139f4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 35px;
+}
+
+.card-icons {
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.card-links {
+  width: 261px;
+  height: 19px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 15px;
+  line-height: 10px;
+  /* or 233% */
+  align-items: center;
+  display: flex;
+  color: #4b4a4c;
+}
+
+.card-links:hover {
+  color: #a139f4;
+  cursor: pointer;
+}
+
+.icon-card-container {
+  position: absolute;
+  top: 70%;
+}

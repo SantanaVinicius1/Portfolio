@@ -7,6 +7,10 @@ import foldericon from "./foldericon.png";
 import toolbelt from "./toolbelt_circle.svg";
 import myicon from "./myicon.svg";
 import myicon2 from "./icon2.png";
+import documenticon from "./document-svgrepo-com.svg";
+import linkedinIcon from "./LinkedinIcon.svg";
+import emailIcon from "./EmailIcon.svg";
+import githubIcon from "./GithubIcon.svg";
 
 export {
   terminalBackground,
@@ -18,4 +22,8 @@ export {
   toolbelt,
   myicon,
   myicon2,
+  documenticon,
+  linkedinIcon,
+  emailIcon,
+  githubIcon,
 };

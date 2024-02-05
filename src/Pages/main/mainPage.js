@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Terminal } from "../../Components";
 import "./mainPage.scss";
-import { foldericon } from "../../Assets/images";
+import { documenticon, foldericon } from "../../Assets/images";
 import { useNavigate } from "react-router-dom";
 import { Window } from "../../Components";
 
@@ -13,6 +13,7 @@ const MainPage = () => {
   const [ctime, setTime] = useState(time);
   const [day, setDay] = useState("");
   const [maximized, setMaximized] = useState(false);
+  const [discovered, setDiscovered] = useState(false);
 
   const [rangeValue, setRangeValue] = useState(0);
 
@@ -22,6 +23,14 @@ const MainPage = () => {
 
     setDay(month + " " + day);
   }, []);
+
+  const UpdateDiscovered = (value) => {
+    setDiscovered(value);
+  };
+
+  const UpdateMaximized = (value) => {
+    setMaximized(value);
+  };
 
   const UpdateTime = () => {
     var t = new Date();
@@ -76,7 +85,12 @@ const MainPage = () => {
 
       <div
         onClick={() => {
-          alert("You don't have permission to access this folder");
+          if (!discovered) {
+            alert("You don't have permission to access this folder");
+          } else {
+            window.location.href =
+              "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+          }
         }}
         style={{
           position: "absolute",
@@ -141,22 +155,22 @@ const MainPage = () => {
           cursor: "pointer",
         }}
       >
-        <img src={foldericon} style={{ width: "60px", height: "60px" }} />
+        <img src={documenticon} style={{ width: "60px", height: "60px" }} />
         <span
           style={{
             color: "white",
             fontSize: "12px",
             position: "relative",
             fontWeight: "semmibold",
-            top: "-15px",
-            left: "16px",
+            top: "-6px",
+            left: "5px",
           }}
         >
-          Game
+          Super safe <br /> pass tip
         </span>
       </div>
-      <Terminal />
-      <Window maximized={maximized} />
+      <Terminal setDiscovered={UpdateDiscovered} discovered={discovered} />
+      <Window maximized={maximized} setMaximized={UpdateMaximized} />
     </div>
   );
 };

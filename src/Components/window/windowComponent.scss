@@ -1,8 +1,21 @@
 .frame {
-  background-color: white;
+  width: 900px;
+  height: 600px;
+  background-color: #232a35;
+  margin-top: 5%;
+  margin-right: 2%;
+  border-radius: 5px;
+  opacity: 0.9;
   position: absolute;
   left: 25%;
-  top: 10%;
+  top: 5%;
+}
+
+.sub-frame {
+  width: 100%;
+
+  margin: auto;
+  margin-top: 5%;
 }
 
 .maximized {
@@ -99,4 +112,53 @@
     width: 800px;
     opacity: 1;
   }
+}
+
+.header {
+  width: 100%;
+  height: 30px;
+  background-color: #282e37;
+  color: white;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 11px;
+  font-weight: medium;
+}
+
+.options {
+  width: 100%;
+  height: 18px;
+  background-color: #282e37;
+  border-bottom: solid rgba(0, 0, 0, 0.173) 0.05px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 11px;
+}
+
+.options-text {
+  color: white;
+  margin-left: 20px;
+  float: left;
+}
+
+.icons {
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 30px;
+}
+.spacer-l-15 {
+  margin-right: 15px;
+}
+
+.spacer-l-12 {
+  margin-right: 12px;
+}
+
+.spacer-l-30 {
+  margin-right: 30px;
+}
+
+.iconsContent {
+  margin-top: 3px;
 }

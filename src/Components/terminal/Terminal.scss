@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
 
+.terminal-link {
+  text-decoration: none;
+}
+
+.terminal-link:hover {
+  color: deeppink;
+}
+
 .terminal-outside {
   width: 900px;
   height: 600px;
