@@ -24,7 +24,8 @@ const Commands = {
     "These are my social, feel free to get in touch.",
     "<br/>",
     "Linkedin:       <a class='terminal-link' href='https://linkedin.com/in/santanavinicius2'>GO TO LINKEDIN</a>",
-    "Github:         <a class='terminal-link' href='https://linkedin.com/in/santanavinicius2'>GO TO GITHUB</a>",
+    "Github:         <a class='terminal-link' href='https://github.com/santanavinicius1'>GO TO GITHUB</a>",
+    "Email:          <a class='terminal-link' href='mailto:santanavinicius097@gmail.com?subject=Nice Portfolio, Let's Connect!&body=Type%20your%20message%20here'>MAIL ME</a>",
     "<br/>",
   ],
 
